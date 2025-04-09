@@ -1,0 +1,88 @@
+.activity-buttons {
+    margin-top: 20px;
+  }
+  .status-col {
+    padding: 10px;
+    border-right: 1px solid #ddd;
+  }
+  .status-col:last-child {
+    border: none;
+  }
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .souvenir-animated {
+    animation: fadeSlideIn 0.5s ease;
+    border: 10px white solid;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+  }
+  body {
+    transition: background 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Sour Gummy;
+  }
+
+  .location-home {
+    background-image: url('img/Interior rumah.png');
+  }
+
+  .location-beach {
+    background-image: url('img/Pantai.png');
+  }
+
+  .location-lake {
+    background-image: url('img/bg_lake.jpg');
+  }
+
+  .location-temple {
+    background-image: url('img/bg_temple.jpg');
+  }
+
+  .location-mountain {
+    background-image: url('img/bg_mountain.jpg');
+  }
+  #game-ui::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent dark */
+    z-index: -1;
+  }
+
+  body{
+    color: white;
+    background-color: rgb(177, 155, 126);
+  }
+  #bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+    opacity: 1;
+  }
+  #textStatus{
+    color: white;
+  }
+  #activity-buttons button{
+    color: white;
+    border-color: white;
+  }
